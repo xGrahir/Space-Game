@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/53e1ad4806.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="main.css" />
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="main-wrap">
+        <div class="logo">
+            <h1><i class="fa-solid fa-note-sticky"></i> myNotes</h1>
+        </div>
+        <div class="buttons">
+            <button class="add"><i class="fa-solid fa-plus"></i> Dodaj</button>
+            <button class="remove-all"><i class="fa-solid fa-trash"></i> Usuń wszystkie</button>
+        </div>
+
+        <p class="empty">Nie masz żadnych notatek :( Kliknij "Dodaj", aby utworzyć notatkę!</p>
+        <div class="notes">
+            <div class="note note-yellow">
+                <button><i class="fa-solid fa-x"></i></button>
+                <h2>To jest notatka testowa 1</h2>
+                <p>Test Test</p>
+            </div>
+            <div class="note note-red">
+                <button><i class="fa-solid fa-x"></i></button>
+                <h2>To jest notatka testowa 2</h2>
+                <p>Test2 Test2</p>
+            </div>
+            <div class="note note-green">
+                <button><i class="fa-solid fa-x"></i></button>
+                <h2>To jest notatka testowa 3</h2>
+                <p>Test3 Test3</p>
+            </div>
+            <div class="note note-yellow">
+                <button><i class="fa-solid fa-x"></i></button>
+                <h2>To jest notatka testowa 4</h2>
+                <p>Test4 Test4</p>
+            </div>
+        </div>
+
+        <div class="wrapper">
+            <h2>Dodaj notatkę</h2>
+            <p>Podaj tytuł</p>
+            <input class="note-input note-title" type="text" maxlength="20">
+            <p>Wybierz kategorię</p>
+            <select class="note-input select-type" name="note-type" id="note-type">
+                <option value="none" disabled selected>--wybierz kategorię--</option>
+                <option value="shopping">Zakupy</option>
+                <option value="job">Praca</option>
+                <option value="other">Inne</option>
+            </select>
+            <p>Wpisz treść notatki</p>
+            <textarea class="note-input note-text" name="" id="" cols="20" rows="5" maxlength="50"></textarea>
+            <p class="error">Musisz uzupełnić wszystkie pola!</p>
+            <div class="add-btns">
+                <button class="add-note-btn"><i class="fa-solid fa-floppy-disk"></i> Zapisz</button>
+                <button class="cancel-add-btn"><i class="fa-solid fa-rectangle-xmark"></i> Anuluj</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
