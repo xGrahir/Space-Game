@@ -25,13 +25,14 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 600px;
+  width: 500px;
   margin: 10px;
   padding: 20px;
   border: 1px solid black;
   border-radius: 8px;
   box-shadow: 0 0 4px black;
   background-color: #50514f;
+  pointer-events: none;
 }
 
 .panel {
