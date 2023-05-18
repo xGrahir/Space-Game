@@ -72,6 +72,24 @@
 				"C: 2"
 			],
 			"correct": 1
+		},
+		{
+			"question": "Olga Tokarczuk nie napisała:",
+			"answers": [
+				"A: Biegunów",
+				"B: Ksiąg Jakubowych",
+				"C: Lodu"
+			],
+			"correct": 3
+		},
+		{
+			"question": "Którego z tych filmów nie wyreżyserował Roman Polański?:",
+			"answers": [
+				"A: Autor widmo",
+				"B: Gorzkie gody",
+				"C: Omen"
+			],
+			"correct": 1
 		}
 	]
 }

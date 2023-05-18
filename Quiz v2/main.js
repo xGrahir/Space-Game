@@ -56,7 +56,9 @@ class Quiz {
         this.whichQuestion()
 		this.countTime()
         this.handleListeners()
-        this.listOfQA.innerHTML = `<button class="btn btn-restart">Restart</button>`
+        this.listOfQA.innerHTML = ''
+		this.quizul.style.pointerEvents = "all"
+		this.quizul.style.opacity = 1
     }
 
 	fillQuestion = () => {
@@ -155,8 +157,8 @@ class Quiz {
             ul.append(li)
             this.checkAnswer(li, i)
         }
-        this.restartBtn = document.querySelector('.btn-restart')
-        this.listOfQA.insertBefore(ul, this.restartBtn)
+        
+        this.listOfQA.appendChild(ul)
     }
 
     saveAnswerToVar = (e) => {
@@ -179,6 +181,8 @@ class Quiz {
         this.finalList.style.display = "flex"
         this.restartBtn.style.display = "block"
         this.nextBtn.style.display = "none"
+		this.quizul.style.opacity = 0
+		this.quizul.style.pointerEvents = "none"
     }
 
 	nextQuestion = () => {
