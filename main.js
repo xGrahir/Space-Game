@@ -21,11 +21,6 @@ class Quiz {
 		this.countTime()
 	}
 
-    g = (e) => {
-        console.log(e.target.textContent);
-        console.log(this.questions[0].answers.indexOf(`${e.target.textContent}`))
-    }
-
 	handleListeners = () => {
 		this.nextBtn.addEventListener('click', this.nextQuestion)
         this.restartBtn.addEventListener('click', this.restartQuiz)
@@ -54,11 +49,11 @@ class Quiz {
         this.nextBtn.style.display = "block"
         this.fillQuestion()
         this.whichQuestion()
-		this.countTime()
+	this.countTime()
         this.handleListeners()
         this.listOfQA.innerHTML = ''
-		this.quizul.style.pointerEvents = "all"
-		this.quizul.style.opacity = 1
+	this.quizul.style.pointerEvents = "all"
+	this.quizul.style.opacity = 1
     }
 
 	fillQuestion = () => {
