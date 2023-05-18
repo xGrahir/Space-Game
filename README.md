@@ -4,4 +4,4 @@
 
 <h2> How to Play </h2>
 
-<p>Just choose answer you think is correct, and then hit the button, but rember you have limited time! </p>
+<p>Just choose answer you think is correct, and then hit the button, but remember, you have limited time! </p>
