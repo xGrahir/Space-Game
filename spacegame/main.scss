@@ -1,0 +1,43 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+    overflow: hidden;
+}
+
+button {
+    margin: 5px 10px;
+    padding: 15px 30px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 4px;
+    background-color: transparent;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(3, 70, 70);
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100vw;
+}
+
+.button-up {
+    display: flex;
+    justify-content: center;
+}
+
+.buttons-bottom {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.fa-solid {
+    pointer-events: none;
+}
